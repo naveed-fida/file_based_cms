@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <%= yield_content :page_title %>
+  <link rel="stylesheet" href="/stylesheets/whitespace-reset.css">
+  <link rel="stylesheet" href="/stylesheets/application.css">
+</head>
+<body>
+
+  <% if session[:message] %>
+    <div class="message">
+      <p><%= session.delete(:message) %></p>
+    </div>
+  <% end %>
+
+  <%= yield %>
+
+</body>
+</html>

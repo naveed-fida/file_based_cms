@@ -1,0 +1,40 @@
+.message {
+  box-sizing: border-box;
+  background: yellow;
+  padding: 10px;
+  margin-bottom: 20px; 
+}
+
+body {
+  margin: 10px 10px 0 10px;
+}
+
+label {
+  display: block;
+}
+
+textarea {
+  margin-top: 10px;
+}
+
+input.submit-button {
+  display: block;
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+
+table {
+  margin-bottom: 20px;
+}
+
+td {
+  padding-left: 20px;
+}
+
+form.delete {
+  display: inline;
+}
+
+form.user-status {
+  font-style: italic;
+}

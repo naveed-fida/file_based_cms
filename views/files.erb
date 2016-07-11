@@ -1,0 +1,24 @@
+<table>
+  <% @files.each do |file| %>
+    <tr>
+      <td><a href="/<%= file %>"><%= file %></a></td>
+      <td><a href="/<%= file %>/edit">Edit</a></td>
+      <td>
+        <form action="/<%= file %>/delete" method="post" class="delete">
+          <button type="submit">Delete</button>
+        </form>
+      </td>
+    </tr>
+  <% end %>
+</table>
+<a href="/new">New Document</a>
+
+  <form class="user-status" action="/users/signout" method="post">
+    <p>Signed in as <%= session[:user] %>
+      <button type="submit">Logout</button>
+    </p>
+  </form>
+
+<% content_for :page_title do %>
+  <title>Simple CMS - Files</title>
+<% end %>
